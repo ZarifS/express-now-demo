@@ -1,0 +1,21 @@
+{
+  "name": "express-app-demo",
+  "version": "1.0.0",
+  "description": "Application for backend challenge for Shopify Summer 2019 Internship",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --no-deprecation api/server.js",
+    "start-watch": "nodemon --no-deprecation api/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zarif Shahriar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}

@@ -16,7 +16,7 @@ app.use(customerRoute)
 app.use(express.static('public'))
 
 app.get('/', (res, req) => {
-    res.sendFile(path.join(__dirname, './public/index.html'))
+    res.sendFile(path.join(__dirname, '../public/index.html'))
 })
 
 //Handler for 404 - Resource not found
@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 //Handler for 500
 app.use((err, req, res, next) => {
     console.error(err.stack)
-    res.sendFile(path.join(__dirname, './public/500.html'))
+    res.sendFile(path.join(__dirname, '../public/500.html'))
 })
 
 const port = process.env.PORT || 3000

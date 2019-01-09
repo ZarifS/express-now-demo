@@ -22,6 +22,7 @@ app.use((req, res, next) => {
         .status(404)
         .send('We think you are lost!')
 })
+
 //Handler for 500
 app.use((err, req, res, next) => {
     console.log('In App 500(/)')

@@ -3,7 +3,7 @@ let express = require('express')
 let router = express.Router()
 
 //Create a new customer
-router.post('/customer', (req, res) => {
+router.post('/api/customer', (req, res) => {
     if (req.body) {
         let model = new CustomerModel(req.body)
         model
@@ -31,7 +31,7 @@ router.post('/customer', (req, res) => {
 })
 
 //Get a customer by email
-router.get('/customer', (req, res) => {
+router.get('/api/customer', (req, res) => {
     if (!req.query.email) {
         return res
             .status(400)
@@ -50,7 +50,7 @@ router.get('/customer', (req, res) => {
 })
 
 //Update a customer by email
-router.put('/customer', (req, res) => {
+router.put('/api/customer', (req, res) => {
     if (!req.query.email) {
         return res
             .status(400)
@@ -68,7 +68,7 @@ router.put('/customer', (req, res) => {
 })
 
 //Delete a customer by email
-router.delete('/customer', (req, res) => {
+router.delete('/api/customer', (req, res) => {
     if (!req.query.email) {
         return res
             .status(400)

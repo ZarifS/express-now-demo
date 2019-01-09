@@ -15,10 +15,6 @@ mongoose.connect(`mongodb://${dbuser}:${dbpassword}@${serverName}/${database}`)
 app.use(bodyParser.json())
 app.use(customerRoute)
 
-app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, '../public/index.html'));
-});
-
 //Handler for 404 - Resource not found
 app.use((req, res, next) => {
     console.log('In App 404(/)')

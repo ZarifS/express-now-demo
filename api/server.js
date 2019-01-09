@@ -3,7 +3,7 @@ let app = express()
 let path = require('path')
 let mongoose = require('mongoose')
 let bodyParser = require('body-parser')
-let customerRoute = require('./api/routes/customer')
+let customerRoute = require('./routes/customer')
 
 const serverName = 'ds151354.mlab.com:51354'
 const database = 'shopify-backend'

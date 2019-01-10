@@ -15,7 +15,7 @@
             "dest": "api/server.js"
         },
         {
-            "src": "/",
+            "src": "/.*",
             "status": 301,
             "headers": {
                 "Location": "https://documenter.getpostman.com/view/1473814/RzfcMrTU"
